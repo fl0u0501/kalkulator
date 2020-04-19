@@ -1,0 +1,96 @@
+# kalkulator
+import math
+
+print("Kallulator")
+
+
+def dodawanie(x, y):
+    return x + y
+
+
+def odejmowanie(x, y):
+    return x - y
+
+
+def mnozenie(x, y):
+    return x * y
+
+
+def dzielenie(x, y):
+    return x / y
+
+
+def potegowanie(x, y):
+    return x ** y
+
+def pierwiastkowanie(x):
+    return math.sqrt(x)
+
+def sinus(x):
+    return math.sin(x)
+
+def cosinus(x):
+    return math.cos(x)
+
+def tangens(x):
+    return math.tan(x)
+
+print("::Menu::")
+print("1 - dodawanie")
+print("2 - odejmowanie")
+print("3 - mnozenie")
+print("4 - dzielenie")
+print("5 - potegowanie")
+print("6 - pierwiastkowanie")
+print("7 - sinus")
+print("8 - cosinus")
+print("9 - tangens")
+print("10 - wyjscie")
+
+wybor = input("Wybierz (1/2/3/4/5/6/7/8/9):")
+
+
+
+if wybor == '1':
+    x = float(input("Podaj liczbe: "))
+    y = float(input("Podaj liczbe: "))
+    print(x, "+", y, "=", dodawanie(x, y))
+
+elif wybor == '2':
+    x = float(input("Podaj liczbe: "))
+    y = float(input("Podaj liczbe: "))
+    print(x, "-", y, "=", odejmowanie(x, y))
+
+elif wybor == '3':
+    x = float(input("Podaj liczbe: "))
+    y = float(input("Podaj liczbe: "))
+    print(x, "*", y, "=", mnozenie(x, y))
+
+elif wybor == '4':
+    x = float(input("Podaj liczbe: "))
+    y = float(input("Podaj liczbe: "))
+    print(x, "/", y, "=", dzielenie(x, y))
+
+elif wybor == '5':
+    x = float(input("Podaj liczbe: "))
+    y = float(input("Podaj potege: "))
+    print(x, "do potęgi", y, "=", potegowanie(x, y))
+
+elif wybor == '6':
+    x = float(input("Podaj liczbe: "))
+    print("pierwiastek z", x, "=", pierwiastkowanie(x))
+
+elif wybor == '7':
+    x = float(input("Podaj liczbe: "))
+    print("sinus z", x, "=", sinus(x))
+
+elif wybor == '8':
+    x = float(input("Podaj liczbe: "))
+    print("cosinus z", x, "=", cosinus(x))
+
+elif wybor == '9':
+    x = float(input("Podaj liczbe: "))
+    print("tangens z", x, "=", tangens(x))
+
+else:
+    print("Wybierz jedną z podanych opcji!")
